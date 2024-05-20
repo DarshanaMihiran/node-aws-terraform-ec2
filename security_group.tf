@@ -12,10 +12,11 @@
     cidr_blocks = [aws_vpc.main.cidr_block]
   }
 
-// open egress traffic - [-1] for all protocols
+  // open egress traffic - [-1] for all protocols
   egress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
-  }
+  }  
+}
